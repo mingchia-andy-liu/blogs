@@ -6,12 +6,11 @@ draft: false
 
 # Welcome!
 
-This blog serves as my way to remember all the things I run into during my
-career. A handy notes for all my journey.
+This blog serves as my way to remember all the things I run into during my career. A handy notes for all my journey.
 
 Find me on Twitter as [@andyliu__]. My code lives in [GitHub].
 
-Send me an [email] if you would live.
+Send me an [email] if you would want.
 
 [@andyliu__]: https://twitter.com/andyliu__
 [GitHub]: https://github.com/mingchia-andy-liu
