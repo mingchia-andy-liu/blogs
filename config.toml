@@ -1,3 +1,29 @@
-baseURL = "http://example.org/"
+baseURL = "https://blogs.aliu.dev"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Andy Liu's Blog 👋"
+theme = 'hugo-bearblog'
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+
+[author]
+  name = "Andy Liu"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
+[menu]
+  [[menu.main]]
+    name       = "Posts"
+    url        = "/posts"
+
+enableRobotsTXT = true
+
+[params]
+  description = "Andy's blog :heart:"
+  favicon = "images/favicon.svg"
+  images = ["images/share.png"]
+  title = "Welcome to Andy's Blog"
+  hideMadeWithLine = true
+  dateFormat = "2006-01-02"
