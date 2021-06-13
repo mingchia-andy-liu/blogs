@@ -27,8 +27,8 @@ enableGitInfo   = true
 
 [params]
   description = "Andy's blog"
-  favicon = "images/favicon.svg"
-  images = ["images/share.png"]
+  favicon = "favicon.svg"
+  images = ["hello.png"]
   title = "Welcome to Andy's Blog"
   hideMadeWithLine = true
   dateFormat = "2006-01-02"
