@@ -3,6 +3,13 @@ languageCode = "en-us"
 title = "Andy Liu's Blog 👋"
 theme = 'hugo-bearblog'
 
+# Hugo global settings.
+relativeURLs    = true
+canonifyURLs    = true
+enableRobotsTXT = true
+enableEmoji     = true
+enableGitInfo   = true
+
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
 
@@ -18,10 +25,8 @@ theme = 'hugo-bearblog'
     name       = "Posts"
     url        = "/posts"
 
-enableRobotsTXT = true
-
 [params]
-  description = "Andy's blog :heart:"
+  description = "Andy's blog"
   favicon = "images/favicon.svg"
   images = ["images/share.png"]
   title = "Welcome to Andy's Blog"
