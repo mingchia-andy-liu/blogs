@@ -1,4 +1,4 @@
-baseURL = "https://blogs.aliu.dev"
+baseURL = "https://blog.aliu.dev"
 languageCode = "en-us"
 title = "Andy Liu's Blog 👋"
 theme = 'hugo-bearblog'
