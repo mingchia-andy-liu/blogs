@@ -9,13 +9,13 @@ tags:
 
 # Openssl with ssl certificates
 
-[OpenSSL](https://www.openssl.org/) is a versatile command line toolkit for the TLS and SSL protocols. Here is a cheat sheet for myself.
+[OpenSSL](https://www.openssl.org/) is a versatile command line toolkit for the TLS and SSL protocols. It can do so much more than what I am covering here. I am only compiling the certificate related commands.
 
-#### View CSR Entries
+#### View CSR
 ```bash
 openssl req -in domain.csr -text -noout -verify
 ```
-#### View Certificate Entries
+#### View Certificate
 This command allows you to view the contents of a certificate (`domain.crt`) in plain text:
 ```bash
 openssl x509 -in domain.crt -text -noout
@@ -93,6 +93,3 @@ openssl x509 -req -sha256 -days 365 -in server.csr -CA ca.crt -CAkey ca.key -set
 openssl req -new -newkey rsa:4096 -keyout client.key -out client.csr -nodes -subj '/CN=My Client'
 openssl x509 -req -sha256 -days 365 -in client.csr -CA ca.crt -CAkey ca.key -set_serial 02 -out client.crt
 ```
-
-### openssl.conf
-
