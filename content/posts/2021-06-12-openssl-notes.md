@@ -3,6 +3,7 @@ title: "Openssl with ssl certificates"
 date: 2021-06-12T19:56:38-07:00
 tags:
   - ssl
+  - certificate
   - command line
 ---
 
