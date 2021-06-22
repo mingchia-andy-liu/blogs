@@ -1,6 +1,10 @@
 ---
 title: "Openssl with ssl certificates"
 date: 2021-06-12T19:56:38-07:00
+description: Learn how to manage ssl certificate with openssl.
+images:
+  - images/hello.jpeg
+slug: Openssl with ssl certificates
 tags:
   - ssl
   - certificate
