@@ -7,6 +7,13 @@ tags:
 ---
 
 ## Introduction
+
+{{< figure
+    src="/images/cors-error.png"
+    alt="A CORS error screenshot."
+    position="center"
+>}}
+
 Recently Instagram started to set `cross-origin-resource-policy` in their image's response header. This is not strictly CORS but it complements CORS. If you are a web developer, you will see CORS errors at some point.
 
 I thought to myself to write a blog series about CORS and how to handle them. The actual purpose of this blog series was twofold:
