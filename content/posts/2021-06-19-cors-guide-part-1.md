@@ -8,15 +8,16 @@ slug: cors-guide-1
 tags:
   - webdev
   - security
+type: post
 ---
-
-## Introduction
 
 {{< figure
     src="/images/cors-error.png"
     alt="A CORS error screenshot."
     position="center"
 >}}
+
+## Introduction
 
 Recently Instagram started to set `cross-origin-resource-policy` in their image's response header. This is not strictly CORS but it complements CORS. If you are a web developer, you will see CORS errors at some point.
 
@@ -45,9 +46,11 @@ To simplify, it is a security measure that the **browser** implements to deny Ja
 
 ## Why do we need it?
 
-Cross-origin requests are useful or even necessary to many websites. Why? Cost and performance are major factors. If you can host your public resources on someone's machine, it can save a lot of money. This is why Content Delivery Network (CDN) exists. It saves you operational cost and improves your user experiences. A win-win for everyone. By using `<script />` or `<img />` with a different domain, they are cross-origin network access requests. Even using Google's font stylesheet `<link rel="stylesheet" href="…">` is a cross-origin request. [Web fonts rely on CORS to work](https://www.w3.org/TR/css-fonts-3/#font-fetching-requirements).
+Cross-origin requests are useful or even necessary to many websites. Why? Cost and performance are major factors. If you can host your public resources on someone's machine, it can save a lot of money. This is why Content Delivery Network (CDN) exists. It saves you operational cost and improves your user experiences. A win-win for everyone.
 
-If it's common, why do browsers block it? Let's say browsers do not block cross-origin requests. Now every site can fetch anything from the internet and see the response. What would happen? 👀
+By using `<script />` or `<img />` with a different domain, they are cross-origin network access requests. Even using Google's font stylesheet `<link rel="stylesheet" href="…">` is a cross-origin request. [Web fonts rely on CORS to work](https://www.w3.org/TR/css-fonts-3/#font-fetching-requirements).
+
+If it's common, why do browsers block it? Let's say they do not block cross-origin requests. Now every site can fetch anything from the internet and see the response. What would happen? 👀
 
 **Case 1**
 
@@ -75,6 +78,18 @@ To see how it works, let's look at the error together and analyze the CORS behav
 Access to fetch at 'http://localhost:5000/' from origin 'http://localhost:3000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
 ```
 
+When a server has been configured to allow CORS, some special headers will be included. Browsers can use these headers to determine whether or not an `XMLHttpRequest` or `fetch` call should continue or fail. The primary header is [Access-Control-Allow-Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#access-control-allow-origin).
+
+For example: to only allow `example.com` with `https` protocol.
+```
+Access-Control-Allow-Origin: https://example.com
+```
+Or if you want to allow everyone, you can set a `*` wildcard character.
+```
+Access-Control-Allow-Origin: *
+```
+The error is saying that the response does not have the CORS header, therefore, browsers block the response. If you navigate to the network tab in the dev tool and see the request. You can see the request is completed but the response is blocked by browser. By default, the server does not need to do anything if CORS isn't needed.
+
 **💡 What is an origin? [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Origin)**
 
 > Web content's origin is defined by the `scheme` (protocol), `host` (domain), and `port` of the URL used to access it. Two objects have the same origin only when the scheme, host, and port all match.
@@ -86,26 +101,12 @@ Quick summary:
 * `https://example.com` and `https://app.example.com` are not the same because the host is different as it's part of the host.
 * `https://example.com` and `https://example.com:8080` are not the same because the port is different.
 
-Now we know what an origin is. The error is saying the browser blocks the access because they are different origins. And the response does not trust the request's origin. If you navigate to the network tab in the dev tool and see the request. You can see the request is completed but the response is blocked by browser.
-
-**Identify a CORS Response**
-
-When a server has been configured to allow CORS, some special headers will be included. Browsers can use these headers to determine whether or not an `XMLHttpRequest` or `fetch` call should continue or fail. The primary header is [Access-Control-Allow-Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#access-control-allow-origin).
-
-For example: to only allow `example.com` with `https` protocol.
-```
-Access-Control-Allow-Origin: https://example.com
-```
-Or if you want to allow everyone, you can set a `*` wildcard character.
-```
-Access-Control-Allow-Origin: *
-```
-
-I've mentioned above that CORS is part of the browser's security model. What would happen outside the browsers? You can try to `curl` or any other API client, the response will not be blocked. Since there is no way to determine the request's `origin`. These headers would mean nothing to them. CORS cannot and should not apply by these clients.
+What would happen outside browsers? You can try to use `curl` or any other API client, the response will not be blocked. Since there is no way to determine the request's `origin`. These headers would mean nothing to them. CORS cannot and should not apply by these clients.
 
 ## Conclusion
 
 * CORS is a browser security measure that denies response access if the response says so.
 * It is the **response** that is blocked, not the request. Since servers has to return the "allowed" origin in the response. Browsers block the response by default or if there is a mismatch.
+* The special headers are useless outside browsers.
 
 Next blog I will talk about how to "fix" the CORS error.
