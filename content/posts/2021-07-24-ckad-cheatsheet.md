@@ -74,6 +74,8 @@ If you need to paste something from another file, ie. pod spec, use `set paste`.
 
 #### Read the requirements by CNCF
 
+https://www.cncf.io/certification/ckad/. Prepare what are required and what are allowed/disallowed.
+
 #### Correct cluster and namespace
 4 clusters are provisioned for your exam, and each question provides the command to switch to the correct cluster. Make sure you copy paste and run that command before each question.
 
