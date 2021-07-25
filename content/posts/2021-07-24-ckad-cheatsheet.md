@@ -20,9 +20,9 @@ type: post
 
 ## Introduction
 
-I recently passed the Certified Kubernetes Application Development exam on July 2021.
+I recently passed the Certified Kubernetes Application Development exam in July 2021.
 
-Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. [The Linux Foundation](https://www.linuxfoundation.org/) offers two certifications on this technology: Certified Kubernetes Application Developer (CKAD) and Certified Kubernetes Administrator (CKA). I wanted to share tips that are helpful while preparing the exam and during the exam as well.
+Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. [The Linux Foundation](https://www.linuxfoundation.org/) offers two certifications on this technology: Certified Kubernetes Application Developer (CKAD) and Certified Kubernetes Administrator (CKA). I wanted to share tips that are helpful while preparing for the exam and during the exam as well.
 
 &nbsp;
 
@@ -39,9 +39,9 @@ This is a good collection: https://github.com/dgkanatsios/CKAD-exercises. Anothe
 
 ### GCP/Azure and network plugins
 
-If you using a cloud providers to practice, make sure you have the latest version. The default version on GCP was behind the latest.
+If you are using a cloud providers to practice, make sure you have the latest version. The default version on GCP was behind the latest.
 
-For Network Policies, make sure you have enable/setup a network plugin. It is one of exam topics but whose implementation depends on the underlying network plugin.
+For Network Policies, make sure you have enable/setup a network plugin. It is one of the exam topics but the feature depends on the underlying network plugin.
 
 ### Internet connection
 
@@ -85,11 +85,11 @@ These are the 2 commands I always use after I start a new question. `kn default`
 
 #### sudo
 
-I did not have to use `sudo` during the exam despite the many people have claimed that some files blocked.
+I did not have to use `sudo` during the exam despite many people have claiming that some files were blocked.
 
 #### Delete pods
 
-If you make a mistake and want to delete a pod, use `--force --grace-period=0` flags. Deleting a pod takes a long time and you want to save much time as possible. Use these flag will exit the delete command immediately.
+If you make a mistake and want to delete a pod, use `--force --grace-period=0` flags. Deleting a pod takes a long time and you want to save as much time as possible. Using these flag will exit the delete command immediately.
 
 #### use busybox and exec to verify the answer
 
@@ -112,9 +112,9 @@ k run ping --image=busybox --rm -it --restart=Never -- wget 10.192.0.1 --spider 
 
 ## Thoughts
 
-Overall, I may have spent around 50 hours spread over 2 months to prepare for this exam. This includes finishing a 30 hours course from linuxacademy and doing the labs by myself. The exam is about time and speed. There are 19 questions and only 2 hours, so you only have about 6 minutes per questions. It does not sound too bad but for some questions it is not enough.
+Overall, I may have spent around 50 hours spread over 2 months to prepare for this exam. This includes finishing a 30 hours course from linuxacademy and doing the labs by myself. The exam is about time and speed. There are 19 questions and only 2 hours, so you only have about 6 minutes per question. It does not sound too bad but for some questions it is not enough.
 
-After completing the exam, I don't think I suddenly become a Kubernetes expert. I only took it because I started using it at work. I do think it is a good exam to test yourself if you are familiar with Kubernetes. The real world environment is much more different than the exam and requirements are much more complex. I also think using the `kubectl` at work has helped me.
+After completing the exam, I don't think I will suddenly become a Kubernetes expert. I only took it because I started using it at work. I do think it is a good exam to test yourself if you are familiar with Kubernetes. The real world environment is much more different than the exam and requirements are much more complex. I also think using the `kubectl` at work has helped me.
 
 Trust yourself. You have practiced enough and don't panic. You have a free retry if you fail the first time.
 
