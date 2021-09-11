@@ -4,7 +4,7 @@ date: 2021-09-06T11:25:37-07:00
 description: PKI serie part 1. Explain what is a encryption and decryption, and how to use them.
 images:
   - images/lock.jpeg
-slug: public-key-infrastructure-1
+slug: pki-1
 tags:
   - pki
   - cryptography
@@ -18,19 +18,15 @@ type: post
 
 Photo credit: [FLY:D](https://unsplash.com/photos/ZNOxwCEj5mw) on [Unsplash](https://unsplash.com/)
 
-
 ## Introduction
 
 In my [openssl certificate command blog]({{< relref "/posts/2021-06-12-openssl-notes.md" >}}), I listed out common commands for dealing with certificates using openssl. I was doing some TLS for my work and had to learn the PKI. I wished I had learned it sooner. Security as a concept has always scared me because I always thought you need strong math skills. Although it is true, understanding the concept is not hard.
 
 The goal for me is to write a blog series about PKI and solidify my own understanding. By doing so, hopefully I can help others understand the power and importance of PKI. This is the first part and I will be separating the topics into small digestible blogs.
 
-
 ## What is it?
 
-There is no single standard that defines the components of a Public Key Infrastructure, but a PKI involves certificate authorities (CAs) and Registration Authorities (RAs). To illustrate the concept, I have to start with the basics and I find it easier to use them in examples. Explaining it in a way that will tell how it works and why it is needed. As is it's the standard in all CS concept blogs, the old Alice and Bob tales. I will try to make it fun and exciting to read.
-
-PKI is an amazing and simple concept. The actual math is complicated, for sure, but you and I don’t need to understand it to appreciate its value.
+There is no single definition of a Public Key Infrastructure, but a PKI is build on top a lot of other concept, cryptography, certificates, CA, RA, etc. To illustrate the concept, I have to start with the basics and I find it easier to use them in examples. Explaining it in a way that will tell how it works and why it is needed. As is it's the standard in all CS concept blogs, the old Alice and Bob tale. I will try to make it fun and exciting to read.
 
 &nbsp;
 
@@ -94,7 +90,7 @@ Let's go back to the love story. _Alice_ and _Bob_ create their own key pairs. N
 
 1. _Alice_ encrypts the letter with _Bob_'s public key
 1. She sends the ciphertext to _Bob_
-1. _Bob_ receives the cipher text and decrypts with his' private key.
+1. _Bob_ receives the ciphertext and decrypts with his' private key.
 1. <...>
 
 Now, _Alice_ can be mathematically sure that only _Bob_ can decrypt the message, because she encrypted it with his public key. If _Chad_ steals the message, he cannot decrypt it. Perfect!
@@ -133,6 +129,8 @@ After all this trouble, _Alice_ and _Bob_ can now talk in secret and they live h
 ## Summary
 
 In this blog, I have described symmetric and asymmetric cryptography, why they are needed, and their use cases. Please note that I am **not** saying that symmetric cryptography is bad, because we can't share the key easily. I am only describing it as not the right tool for the job (establishing a secure connection). In fact, most of the messages exchanged over the internet are using symmetric cryptography once we have established a secure connection because it is much faster.
+
+Cryptography is an amazing and simple concept. The actual math is complicated, for sure, but I don’t need to understand it to appreciate its value.
 
 I have dismissed where people would store the public key and others can be ensured that they have not been tampered with. By publishing the keys online, we would have to do it by an insecure measure. Like the scene 2's problem. They have services like this [keyserver.ubuntu.com](http://keyserver.ubuntu.com:11371/) or [keyserver.pgp.com](https://keyserver.pgp.com/vkd/GetWelcomeScreen.event).
 
