@@ -2,12 +2,19 @@
 title: "Tne Perfect Date?"
 date: 2021-12-25T17:43:44-08:00
 images:
-  - images/weather-2.jpeg
+  - images/calendar.jpeg
 slug: the-perfect-date
 tags:
-  - js
+  - javascript
 type: post
 ---
+
+{{< figure
+    src="/images/calendar.jpg"
+    alt="3 locks on a table."
+>}}
+Photo by [Kyrie kim](https://unsplash.com/@kyrie3) on [Unsplash](https://unsplash.com/)
+  
 
 ## Introduction
 
@@ -36,7 +43,7 @@ is "it depends".
 🤷‍♀️. I know, the answer is not very satisfying.
 
 
-The answer actually depends on the timezone you run the code at. Because in JS, if you have the format `YYYY/MM/DD`, it will be parsed to your local timezone. But with `YYYY-MM-DD`, it will be parsed to the `UTC` timezone. 🎉 Surprise?
+The answer depends on the **"timezone"** the code at. Because in JS, if you have the format `YYYY/MM/DD`, it will be parsed to your local timezone. But with `YYYY-MM-DD`, it will be parsed to the `UTC` timezone. 🎉 Surprise? So if the timezone is `UTC`, the answer is `true`, if not, then `false`.
 
 
 Let's look at why? See the MDN
