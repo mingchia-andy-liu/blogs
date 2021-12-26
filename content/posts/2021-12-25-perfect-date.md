@@ -11,7 +11,7 @@ type: post
 
 {{< figure
     src="/images/calendar.jpg"
-    alt="3 locks on a table."
+    alt="A calendar."
 >}}
 Photo by [Kyrie kim](https://unsplash.com/@kyrie3) on [Unsplash](https://unsplash.com/)
   
