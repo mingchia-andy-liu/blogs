@@ -61,7 +61,7 @@ One type of algorithm is **"symmetric cryptography"**. The principal idea is tha
 
 Back to the love story, _Alice_ and _Bob_ agree on a key and start communicating. Now _Chad_ cannot understand the letter even if he can secretly view it. Does this solve their problem? Yes, it does!
 
-⚠️ **But** how do they agree on the key? Can they send their key through letters again? Not really, because there is a chance that _Chad_ bribe the mailman and steal the key. One way is to solve this is that _Alice_ and _Bob_ can meet up and agree on a key.
+⚠️ **But** how do they agree on the key? Can they send their key through letters again? Not really, because there is a chance that _Chad_, the mailman, can steal the key. One way is to solve this is that _Alice_ and _Bob_ can meet up and agree on a key.
 
 &nbsp;
 
