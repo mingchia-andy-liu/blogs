@@ -19,7 +19,8 @@ Photo by [Kyrie kim](https://unsplash.com/@convertkit) on [Unsplash](https://uns
 
 ## Introduction
 
-Last blog, I described how we can use cryptography to securely communicate between 2 people. In this blog, I want to discuss how we can use the same pattern and apply it to computers. How do 1 computer securely talk to another computer over the internet?
+
+[Last blog]({{< ref "/posts/2021-09-06-pki-1-cryptography.md" >}}), I described how we can use cryptography to securely communicate between 2 people. In this blog, I want to discuss how we can use the same pattern and apply it to computers. How do 1 computer securely talk to another computer over the internet?
 
 To recap the cryptography blog, if 2 people want to securely communicate to each other, they can achieve with asymmetric cryptography. Each person sign with their private key with a fix message and the recipient's public key. It ensures the message isn't altered in transit and only the recipient can decode the message.
 
@@ -84,3 +85,9 @@ It has a lot stuff. The overall gist is that it is a certificate for "blog.aliu.
 
 
 Obviously it has way more stuff than I described in above. It also has a public key for my "blog.aliu.dev" domain. If my domain ever signs a certificate, other people can use this public key for verification.
+
+&nbsp;
+
+_UPDATE:_
+* [PKI - Part 1]({{< ref "/posts/2021-09-06-pki-1-cryptography.md" >}})
+* [PKI - Part 3]({{< ref "/posts/2022-01-09-pki-3-ca.md" >}})

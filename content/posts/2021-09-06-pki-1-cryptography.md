@@ -135,3 +135,9 @@ Cryptography is an amazing and simple concept. The actual math is complicated, f
 I have dismissed where people would store the public key and others can be ensured that they have not been tampered with. By publishing the keys online, we would have to do it by an insecure measure. Like the scene 2's problem. They have services like this [keyserver.ubuntu.com](http://keyserver.ubuntu.com:11371/) or [keyserver.pgp.com](https://keyserver.pgp.com/vkd/GetWelcomeScreen.event).
 
 In the next blog, I will explain how we can take this concept and apply to computers instead of humans.
+
+&nbsp;
+
+_UPDATE:_
+* [PKI - Part 2]({{< ref "/posts/2021-09-18-pki-2-certificate.md" >}})
+* [PKI - Part 3]({{< ref "/posts/2022-01-09-pki-3-ca.md" >}})
