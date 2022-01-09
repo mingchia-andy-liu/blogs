@@ -1,15 +1,21 @@
 ---
 title: "Public Key Infrastructure Part 2 - Certificate"
 date: 2021-09-18T11:01:03-07:00
-description: PKI serie part 1. Explain what is a encryption and decryption, and how to use them.
+description: PKI serie part 2. What is a certificate.
 images:
-  - images/lock.jpeg
+  - images/passport.jpg
 slug: pki-2
 tags:
   - pki
   - cryptography
 type: post
 ---
+
+{{< figure
+    src="/images/passport.jpg"
+    alt="A calendar."
+>}}
+Photo by [Kyrie kim](https://unsplash.com/@convertkit) on [Unsplash](https://unsplash.com/)
 
 ## Introduction
 
@@ -32,7 +38,7 @@ The digests are designed to protect the "integrity" of the message content. Any 
 There are a few requirements of a good hash function:
 1. Deterministic: always generate the same hash given the same input.
 1. One-way: it should be computationally infeasible to take the output of a hash function and reconstruct its input.
-1. Collision resistant: it should be computationally infeasible for 2 messages have the same hash.
+1. Collision resistant: it should be computationally infeasible for 2 messages to have the same hash.
 
 **NOTE**: the message content are usually in plaintext along with the message digest.
 
@@ -51,9 +57,30 @@ The digital signatures are designed to prove the authenticity of the message. Gi
 
 ### Certificates
 
-In last blog, I mentioned people use services like public key service to look up someone else's public key. But how would one computer to know what to search for when it receive a message.
+A certificate is like a passport for computers and servers. It contains the name of the identity, the issuer, the valid date range, what can the identity do, etc.
 
-The validity of the authentication of a digital signature only if we know the public key's owner and identity. We can't know the identity unless we know the public key's owner. Having a central service for looking up the public key's true identity is hard and waste of resource. We need a better solution.
+Some similarities:
+* subject -> the passport holder's name.
+* issuer -> the government.
+* signature -> the passport id.
 
 
-We use a digital certificate for the public key.
+When a client connects to a server, the server present a certificate for the client to verify that it is what it claims to be. 
+
+
+**HOW? use the public key**
+
+The certificate contains issuer's information. The client can use the issuer's public key to verify the signature. Basically to decryt signature using public key. If it can be decrypted and match the information, then the client can TRUST the certificate is issued by the issuer's private key.
+
+
+My blog's certificate:
+
+{{< figure
+    src="/images/blog-certificate.png"
+    alt="A screenshot of the blog.aliu.dev certificate in a terminal window."
+>}}
+
+It has a lot stuff. The overall gist is that it is a certificate for "blog.aliu.dev" and issued by Cloudflare. It has the signature at the bottom signed by Cloudflare's private. And if you trust Cloudflare, then you can trust me, "blog.aliu.dev".
+
+
+Obviously it has way more stuff than I described in above. It also has a public key for my "blog.aliu.dev" domain. If my domain ever signs a certificate, other people can use this public key for verification.
