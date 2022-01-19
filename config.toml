@@ -27,7 +27,7 @@ enableGitInfo   = true
 
 [params]
   description = "Andy's blog"
-  images = ["hello.jpeg"]
+  images = ["images/hello.jpeg"]
   title = "Welcome to Andy's Blog"
   hideMadeWithLine = true
   dateFormat = "2006-01-02"
