@@ -3,6 +3,8 @@ title: "function.length in JavaScript"
 date: 2022-01-17T22:47:13-08:00
 description: Found a a function.length in wild. What is it?
 slug: javascript-function-length
+images:
+  - images/function-length-in-JavaScript.jpeg
 tags:
   - javascript
 type: post
