@@ -2,7 +2,7 @@
 title: "Intigriti 0222 XSS Challenge Attempt"
 date: 2022-02-19T10:59:07-08:00
 slug: intigriti-0222-challenge-attempt
-description: My attempt to solve intigriti xss challenge attempt
+description: My attempt to solve the intigriti 0222 xss challenge
 images:
   - images/0222-challenge/og.png
 tags:
