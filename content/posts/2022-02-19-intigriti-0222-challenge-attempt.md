@@ -1,7 +1,8 @@
 ---
-title: "Intigriti 0222 Challenge Attempt"
+title: "Intigriti 0222 XSS Challenge Attempt"
 date: 2022-02-19T10:59:07-08:00
 slug: intigriti-0222-challenge-attempt
+description: My attempt to solve intigriti xss challenge attempt
 images:
   - images/0222-challenge/og.png
 tags:
@@ -24,7 +25,6 @@ See
 * Intigriti explanation: https://www.youtube.com/watch?v=P1bFG2qMxec
 
 
-
 ## My attempt
 
 Even though I did not complete the challenge, I thought I would document what my thought process were and what I've learned. 
@@ -34,15 +34,12 @@ Even though I did not complete the challenge, I thought I would document what my
 The page has a form with a name input and a toggle. The instruction says the name cannot be empty nor can it be longer than 24 characters.
 Let's try it. Enting the name will trigger a dialog popup with the name from the input field. 
 
-
-
  |
 :-------------------------:|:-------------------------:
 ![](/images/0222-challenge/form.png)  |  ![](/images/0222-challenge/popup.png)
 
 
 First thing I noticed is that the uri changed with `q` and `first` query parameters. It seems like I can manipulate these parameter to cause a XSS attack. Let's see how the parameters are appended. Looking at the source code we can see that it is set directly to the `window.location.search` property. The value is uri encoded.
-
 
 ```js
  window['main-form'].onsubmit = function(e) {
@@ -107,13 +104,7 @@ But this exceeds the character limit. 🤔. This is where I was stuck. I looked 
 <style onload=alert(1)>
 ```
 
-
-{{<figure
-    src="/images/0222-challenge/alert.png"
-    alt="A screenshot of the alert(1)"
-    width="50%"
->}}
-
+{{<figure src="/images/0222-challenge/alert.png" alt="A screenshot of the alert(1)" width="50%" >}}
 
 Yay, I got an alert popup. But this is not the objective of the challenge. I need to get `alert(document.domain)`. I spent a couple more days on this challenge and could not find the answers.I tried to see if there is a way maybe I can use a tiny url to load some bad script. But no way I can pass below the 24 characters limit.
 
@@ -158,13 +149,7 @@ This didn't work. But `eval` also works with multiline js statements. Let's try 
 
 `https://challenge-0222.intigriti.io/challenge/xss.html?q=%3Cstyle/onload=eval(uri)%3E&first=no&%0Aalert(document.domain)`
 
-
-{{<figure
-    src="/images/0222-challenge/complete.png"
-    alt="XSS successful"
-    width="50%"
->}}
-
+{{<figure src="/images/0222-challenge/complete.png" alt="XSS successful" width="50%" >}}
 
 ## Thoughts
 
