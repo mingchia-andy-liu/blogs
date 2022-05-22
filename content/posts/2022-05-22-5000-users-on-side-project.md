@@ -1,7 +1,7 @@
 ---
-title: "5000+ Users on Side Project"
+title: "5000+ Users on a Side Project"
 date: 2022-05-22T09:52:06-07:00
-description: Learn shell expansion
+description: My NBA chrome extension just passed 5000+ daily active users!
 images:
   - images/2022-05-22/og.png
 tags:
