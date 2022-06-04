@@ -18,7 +18,7 @@ Intigriti is a hacking and bug bounty platform. They host a monthly XSS challeng
 
 See
 * Challenge: https://challenge-0522.intigriti.io/challenge/challenge.html
-
+* [My attempt on February's  challenge]({{< ref "/posts/2022-02-19-intigriti-0222-challenge-attempt.md" >}})
 
 ## My Solution
 
