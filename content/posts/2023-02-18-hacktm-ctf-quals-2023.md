@@ -10,9 +10,7 @@ tags:
 type: post
 ---
 
-For this CTF, I couldn't do much for the challenges. I was only able to solve 1 challenge. Here is a quick and short writeup, hopefully I can next time I can do more!
-
-This was a CTF organized by [WreckTheLine](https://wrecktheline.com/).
+This was a CTF organized by [WreckTheLine](https://wrecktheline.com/). For the event, I did not solve much for the challenges, only able to solve 1 challenge. Here is a quick and short writeup, hopefully I can next time I can do more!
 
 
 ### web/blog
@@ -47,7 +45,7 @@ In the utils file, we can find that each user's profile picture is included in t
 $picture = base64_encode(file_get_contents($this->picture_path));
 ```
 
-Since we know exactly where the flag is, we can simply ask the server to load from flag path instead of the default from the cookie. Then we can get the flag `HackTM{r3t__toString_1s_s0_fun_13c573f6}`.
+Since we know exactly where the flag is, we can simply modify the cookie to load from flag path instead of the default. Then we can get the flag `HackTM{r3t__toString_1s_s0_fun_13c573f6}`.
 
 
 ### web/blog-revenge
