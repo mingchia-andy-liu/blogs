@@ -2,8 +2,7 @@
 title: "Public Key Infrastructure Part 1 - Cryptography"
 date: 2021-09-06T11:25:37-07:00
 description: PKI serie part 1. Explain what is a encryption and decryption, and how to use them.
-images:
-  - images/lock.jpeg
+image: images/lock.jpeg
 slug: pki-1
 tags:
   - pki

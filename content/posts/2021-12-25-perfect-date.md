@@ -1,8 +1,7 @@
 ---
 title: "The Perfect Date?"
 date: 2021-12-25T17:43:44-08:00
-images:
-  - images/calendar.jpeg
+image: images/calendar.jpeg
 slug: the-perfect-date
 tags:
   - javascript

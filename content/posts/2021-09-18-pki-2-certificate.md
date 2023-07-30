@@ -2,8 +2,7 @@
 title: "Public Key Infrastructure Part 2 - Certificate"
 date: 2021-09-18T11:01:03-07:00
 description: PKI serie part 2. What is a certificate.
-images:
-  - images/passport.jpg
+image: images/passport.jpg
 slug: pki-2
 tags:
   - pki

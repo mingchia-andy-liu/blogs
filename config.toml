@@ -1,33 +1,58 @@
 baseURL = "https://blog.aliu.dev"
 languageCode = "en-us"
-title = "Andy Liu's Blog 👋"
-theme = 'hugo-bearblog'
+title = "blog.aliu.dev"
+theme = "gokarna"
+
 
 # Hugo global settings.
 relativeURLs    = true
 canonifyURLs    = true
 enableRobotsTXT = true
 enableEmoji     = true
-enableGitInfo   = true
 
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
 
-[author]
-  name = "Andy Liu"
+# gokarna settings.
 
-[taxonomies]
-  tag      = "tags"
-  category = "categories"
+[params]
+  avatarURL = "images/head.jpg"
+  avatarSize = "size-xl"
+  accentColor = "#FF4D4D"
+  socialIcons = [
+    {name = "github", rel = "me", url = "https://aliu.info/gh"},
+    {name = "twitter", rel = "me", url = "https://aliu.info/twitter"},
+    {name = "linkedin", rel = "me", url = "https://aliu.info/in"},
+    {name = "email", rel = "me", url = "mailto:andy@aliu.dev"}
+  ]
+  metaKeywords = ["blog", "aliu", "andy liu", "hugo"]
+  showPostsOnHomePage = "recent"
+  customFooterHTML = '<img style="vertical-align: middle;" src="https://views.aliu.dev?page={{ .Permalink }}&label=Views" />'
+  togglePreviousAndNextButtons = "true"
 
 [menu]
   [[menu.main]]
-    name       = "Posts"
-    url        = "/posts"
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    url = "/"
+    weight = 1
 
-[params]
-  description = "Andy's blog"
-  images = ["images/hello.jpeg"]
-  title = "Welcome to Andy's Blog"
-  hideMadeWithLine = true
-  dateFormat = "2006-01-02"
+  [[menu.main]]
+    name = "Posts"
+    identifier = "posts"
+    url = "/posts/"
+    pre = "<span data-feather='book'></span>"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "tags"
+    pre = "<span data-feather='tag'></span>"
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 3
+    ordered = false

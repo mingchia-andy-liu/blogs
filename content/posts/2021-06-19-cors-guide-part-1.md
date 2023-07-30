@@ -2,8 +2,7 @@
 title: "CORS Guide Part 1"
 date: 2021-06-19T12:16:50-07:00
 description: Learn what is CORS and how it works with examples.
-images:
-  - images/cors-error.png
+image: images/cors-error.png
 slug: cors-guide-1
 tags:
   - webdev

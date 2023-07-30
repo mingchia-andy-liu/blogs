@@ -2,11 +2,9 @@
 title: "HackTM CTF Quals 2023 Writeup"
 date: 2023-03-18T15:21:43-07:00
 description: The HackTM CTF Quals 2023 challenge writeup. 1 solved web challenge.
-images:
-  - images/2023-03-18/hackTM-CTF.png
+image: images/2023-03-18/hackTM-CTF.png
 tags:
   - ctf
-  - security
 type: post
 ---
 

@@ -2,8 +2,7 @@
 title: "Intigriti 0522 XSS Challenge"
 date: 2022-05-29T17:47:58-07:00
 description: Solving Intigriti 0522 XSS Challenge
-images:
-  - images/0222-challenge/solved.png
+image: images/0222-challenge/solved.png
 tags:
   - javascript
   - xss

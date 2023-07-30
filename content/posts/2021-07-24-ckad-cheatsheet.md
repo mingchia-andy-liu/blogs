@@ -2,8 +2,7 @@
 title: "How to pass CKAD?"
 date: 2021-07-24T17:41:22-07:00
 description: This post tells you how to ace CKAD and give you my cheat sheet!
-images:
-  - images/ckad-certified-kubernetes-application-developer.png
+image: images/ckad-certified-kubernetes-application-developer.png
 slug: ckad-cheat-sheet
 tags:
   - kubernetes
