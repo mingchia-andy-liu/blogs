@@ -1,0 +1,15 @@
+/* fix prev-next overflow to footer and anchor is blocked*/
+.prev-post {
+  float: none;
+  text-align: left;
+}
+
+.next-post {
+  float: none;
+  text-align: right;
+}
+
+.prev-next {
+  display: flex;
+  justify-content: space-between;
+}

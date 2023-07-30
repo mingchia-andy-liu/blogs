@@ -1,0 +1,28 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+
+title = "Congo"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+[params]
+  isoCode = "en"
+  displayName = "EN"
+  rtl = false
+
+  dateFormat = "2006-12-31"
+
+  # mainSections = ["section1", "section2"]
+  # description = "My awesome website"
+
+[author]
+  # name = "Your name here"
+  image = "images/head.jpg"
+  # headline = "I'm only human"
+  # bio = "A little bit about you"
+  links = [
+    { email = "mailto:hello@aliu.dev" },
+    { github = "https://aliu.info/gh" },
+    { linkedin = "https://aliu.info/in" },
+    { twitter = "https://aliu.info/tw" }
+  ]

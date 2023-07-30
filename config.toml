@@ -1,7 +1,7 @@
 baseURL = "https://blog.aliu.dev"
 languageCode = "en-us"
 title = "blog.aliu.dev"
-theme = "gokarna"
+theme = "congo"
 
 
 # Hugo global settings.
@@ -27,6 +27,7 @@ enableEmoji     = true
   ]
   metaKeywords = ["blog", "aliu", "andy liu", "hugo"]
   showPostsOnHomePage = "recent"
+  customHeadHTML = '<link rel="stylesheet" type="text/css" href="/styles/override.css">'
   customFooterHTML = '<img style="vertical-align: middle;" src="https://views.aliu.dev?page={{ .Permalink }}&label=Views" />'
   togglePreviousAndNextButtons = "true"
 

@@ -7,12 +7,13 @@ slug: ckad-cheat-sheet
 tags:
   - kubernetes
   - ckad
+  - certificate
 type: post
 ---
 
 {{< figure
     src="/images/ckad-certified-kubernetes-application-developer.png"
-    alt="CKAD badge."
+    alt="A CKAD badge"
     position="center"
     width="50%"
 >}}
