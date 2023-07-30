@@ -1,5 +1,5 @@
 ---
-title: "Tne Perfect Date?"
+title: "The Perfect Date?"
 date: 2021-12-25T17:43:44-08:00
 images:
   - images/calendar.jpeg
