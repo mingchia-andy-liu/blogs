@@ -5,6 +5,9 @@
 baseURL = "https://blog.aliu.dev"
 defaultContentLanguage = "en"
 
+# needed if we didn't install congo by hugo mod
+theme = "congo"
+
 enableRobotsTXT = true
 paginate = 20
 summaryLength = 0

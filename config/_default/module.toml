@@ -1,7 +1,0 @@
-[hugoVersion]
-  extended = false
-  min = "0.87.0"
-
-# not sure why i need this
-[[imports]]
-path = "github.com/jpanther/congo/v2"
