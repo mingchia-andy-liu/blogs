@@ -2,24 +2,20 @@ languageCode = "en"
 languageName = "English"
 weight = 1
 
-title = "Congo"
-# copyright = "Copy, _right?_ :thinking_face:"
+title = "Andy Liu"
 
 [params]
   isoCode = "en"
   displayName = "EN"
   rtl = false
-
-  dateFormat = "2006-12-31"
-
-  # mainSections = ["section1", "section2"]
-  # description = "My awesome website"
+  # dateFormat = "2006-01-02"
+  description = "My awesome website"
 
 [author]
-  # name = "Your name here"
+  name = "Andy Liu"
   image = "images/head.jpg"
   # headline = "I'm only human"
-  # bio = "A little bit about you"
+  bio = "I love sharing what I've learned with others and I hope you find something here that's useful."
   links = [
     { email = "mailto:hello@aliu.dev" },
     { github = "https://aliu.info/gh" },

@@ -20,6 +20,13 @@
   pageRef = "tags"
   weight = 2
 
+[[main]]
+  identifier = "appearance"
+  weight = 99
+  [main.params]
+    action = "appearance"
+    # icon = "appearance"
+
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.

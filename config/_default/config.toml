@@ -6,7 +6,7 @@ baseURL = "https://blog.aliu.dev"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
-paginate = 10
+paginate = 20
 summaryLength = 0
 
 [outputs]
