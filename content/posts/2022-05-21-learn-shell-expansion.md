@@ -5,7 +5,6 @@ description: Learn shell expansion
 image: images/2022-05-21/og.png
 tags:
   - shell
-type: post
 ---
 
 ## Intro

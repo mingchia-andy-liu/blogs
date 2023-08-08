@@ -7,7 +7,6 @@ slug: cors-guide-1
 tags:
   - webdev
   - security
-type: post
 ---
 
 {{< figure

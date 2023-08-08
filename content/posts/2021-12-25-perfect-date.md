@@ -5,7 +5,6 @@ image: images/calendar.jpeg
 slug: the-perfect-date
 tags:
   - javascript
-type: post
 ---
 
 {{< figure

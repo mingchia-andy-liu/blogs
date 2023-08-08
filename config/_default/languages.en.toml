@@ -8,13 +8,13 @@ title = "Andy Liu"
   isoCode = "en"
   displayName = "EN"
   rtl = false
-  # dateFormat = "2006-01-02"
+  dateFormat = "2006-01-02"
   description = "My awesome website"
 
 [author]
   name = "Andy Liu"
   image = "images/head.jpg"
-  # headline = "I'm only human"
+  headline = "I love sharing what I've learned with others and I hope you find something here that's useful."
   bio = "I love sharing what I've learned with others and I hope you find something here that's useful."
   links = [
     { email = "mailto:hello@aliu.dev" },

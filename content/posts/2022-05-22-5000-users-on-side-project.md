@@ -6,7 +6,6 @@ image: images/2022-05-22/og.png
 tags:
   - chrome-extension
   - firefox-addon
-type: post
 ---
 
 {{< figure

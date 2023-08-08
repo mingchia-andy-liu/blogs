@@ -9,7 +9,6 @@ tags:
   - ssl
   - certificate
   - command line
-type: post
 ---
 
 [OpenSSL](https://www.openssl.org/) is a versatile command line toolkit for the TLS and SSL protocols. It can do so much more than what I am covering here. I am only compiling the certificate related commands.

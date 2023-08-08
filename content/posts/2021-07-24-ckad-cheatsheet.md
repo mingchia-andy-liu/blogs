@@ -8,7 +8,6 @@ tags:
   - kubernetes
   - ckad
   - certificate
-type: post
 ---
 
 {{< figure

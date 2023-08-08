@@ -5,7 +5,6 @@ image: images/weather-2.jpeg
 slug: cloudflare-dev-challenge
 tags:
   - cloudflare
-type: post
 ---
 
 ## Introduction

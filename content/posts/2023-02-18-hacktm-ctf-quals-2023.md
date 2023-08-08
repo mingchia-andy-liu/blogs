@@ -5,7 +5,6 @@ description: The HackTM CTF Quals 2023 challenge writeup. 1 solved web challenge
 image: images/2023-03-18/hackTM-CTF.png
 tags:
   - ctf
-type: post
 ---
 
 This was a CTF organized by [WreckTheLine](https://wrecktheline.com/). For the event, I did not solve much for the challenges, only able to solve 1 challenge. Here is a quick and short writeup, hopefully I can next time I can do more!

@@ -7,7 +7,6 @@ slug: pki-2
 tags:
   - pki
   - cryptography
-type: post
 ---
 
 {{< figure

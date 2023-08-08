@@ -8,7 +8,6 @@ tags:
   - javascript
   - xss
   - intigriti
-type: post
 ---
 
 ## Intro
