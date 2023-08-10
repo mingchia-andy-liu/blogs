@@ -8,9 +8,19 @@ defaultContentLanguage = "en"
 # needed if we didn't install congo by hugo mod
 theme = "congo"
 
+
+# Hugo global settings.
+relativeURLs    = true
+canonifyURLs    = true
 enableRobotsTXT = true
+enableEmoji     = true
+enableGitInfo   = true
+
 paginate = 20
 summaryLength = 0
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
