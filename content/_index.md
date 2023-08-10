@@ -1,4 +1,4 @@
 ---
 images: 
-  - images/head.jpg
+  - /images/head.jpg
 ---
