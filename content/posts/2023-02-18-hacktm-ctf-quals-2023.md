@@ -13,7 +13,6 @@ A CTF organized by [WreckTheLine](https://wrecktheline.com/). For the event, I d
 ## web/blog
 
 * solved
-* solves: (forgot to jot down the number)
 
 It is a simple php where users can sign up and post blogs. After user creates a blog, the blog is shown with a unique URL. After browsing the source code, we can find that the flag is copied to a specific location.
 
@@ -48,7 +47,6 @@ Since we know exactly where the flag is, we can simply modify the cookie to load
 ## web/blog-revenge
 
 * unsolved
-* solves: (forgot to jot down the number)
 
 This is exact same challenge but the flag is not leaked through the dockerfile. I couldn't find out how to solve this CTF and couldn't find the author or any other writeup about it. There are a lot places in the code with some questionable code but nothing seems to work. I do see people performing sql injection but nothing came from it.
 

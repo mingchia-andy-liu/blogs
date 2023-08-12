@@ -19,7 +19,6 @@
   -webkit-background-clip: text;
   background-clip: text;
 
-  /* reduce the width to only the words */
-  width: min-content;
-  white-space: nowrap;
+  /* fit the width to only the words */
+  display: inline-block;
 }

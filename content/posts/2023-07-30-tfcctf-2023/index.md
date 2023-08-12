@@ -148,7 +148,7 @@ Automatically fix the IHDR? (Y/N)y
 ```
 
 {{< figure
-    src="/images/2023-07-30/down_bad_flag.png"
+    src="down_bad_flag.png"
     alt="The down bad image with flag"
     width="30%"
 >}}
