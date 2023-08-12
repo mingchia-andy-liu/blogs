@@ -14,9 +14,9 @@ This blog mainly contains things I've learned or built, and some write-ups for C
 
 ### Some random facts about me
 
-My absolute favorite band is <mark>[Girls' Generation](https://www.youtube.com/@GIRLSGENERATION)</mark>, I even [built a little something for me about them]({{< ref "/projects/instagram" >}})
+My absolute favorite band is [<mark>Girls' Generation</mark>](https://www.youtube.com/@GIRLSGENERATION), I even [built a little something for me about them]({{< ref "/projects/instagram" >}})
 
-I love the show <mark>[Friends](https://www.youtube.com/watch?v=8w3wmQAMoxQ)</mark>, I've watched it over 10 times from beginning to the end. I can quote almost every scene.
+I love the show [<mark>Friends</mark>](https://www.youtube.com/watch?v=8w3wmQAMoxQ), I've watched it over 10 times from beginning to the end. I can quote almost every scene.
 
 
 
