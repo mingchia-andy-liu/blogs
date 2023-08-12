@@ -1,3 +1,7 @@
+:root {
+  font-size: 23px;
+}
+
 /* Update the h1 in home page with avatar */
 #main-content article header img ~ h1 {
   font-size: 4rem;
