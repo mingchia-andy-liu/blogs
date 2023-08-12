@@ -1,0 +1,25 @@
+/* Update the h1 in home page with avatar */
+#main-content article header img ~ h1 {
+  font-size: 4rem;
+  line-height: 4.25rem;
+}
+
+#main-content header h1 {
+  --tw-gradient-from: rgb(163 230 53);
+  --tw-gradient-to:  rgb(22, 163, 74);
+  --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+
+  /* .bg-gradient-to-r */
+  background-image: linear-gradient(to right,var(--tw-gradient-stops));
+
+  /* .text-transparent */
+  color: transparent;
+
+  /* .bg-clip-text */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* reduce the width to only the words */
+  width: min-content;
+  white-space: nowrap;
+}
