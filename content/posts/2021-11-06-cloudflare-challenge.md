@@ -1,12 +1,10 @@
 ---
 title: "Cloudflare Developer Challenge: Air Quality Report & Prize"
 date: 2021-11-06T11:45:42-07:00
-images:
-  - images/weather-2.jpeg
+image: images/weather-2.jpeg
 slug: cloudflare-dev-challenge
 tags:
   - cloudflare
-type: post
 ---
 
 ## Introduction

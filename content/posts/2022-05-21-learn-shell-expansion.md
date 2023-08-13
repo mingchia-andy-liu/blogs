@@ -2,11 +2,9 @@
 title: "Learn Shell Expansion"
 date: 2022-05-21T09:30:00-07:00
 description: Learn shell expansion
-images:
-  - images/2022-05-21/og.png
+image: images/2022-05-21/og.png
 tags:
   - shell
-type: post
 ---
 
 ## Intro

@@ -2,21 +2,17 @@
 title: "HackTM CTF Quals 2023 Writeup"
 date: 2023-03-18T15:21:43-07:00
 description: The HackTM CTF Quals 2023 challenge writeup. 1 solved web challenge.
-images:
-  - images/2023-03-18/hackTM-CTF.png
+image: images/2023-03-18/hackTM-CTF.png
 tags:
   - ctf
-  - security
-type: post
+showTableOfContents: true
 ---
 
-This was a CTF organized by [WreckTheLine](https://wrecktheline.com/). For the event, I did not solve much for the challenges, only able to solve 1 challenge. Here is a quick and short writeup, hopefully I can next time I can do more!
+A CTF organized by [WreckTheLine](https://wrecktheline.com/). For the event, I did not solve much for the challenges, only able to solve 1 challenge. Here is a quick and short writeup, hopefully I can next time I can do more!
 
-
-### web/blog
+## web/blog
 
 * solved
-* solves: (forgot to jot down the number)
 
 It is a simple php where users can sign up and post blogs. After user creates a blog, the blog is shown with a unique URL. After browsing the source code, we can find that the flag is copied to a specific location.
 
@@ -48,10 +44,9 @@ $picture = base64_encode(file_get_contents($this->picture_path));
 Since we know exactly where the flag is, we can simply modify the cookie to load from flag path instead of the default. Then we can get the flag `HackTM{r3t__toString_1s_s0_fun_13c573f6}`.
 
 
-### web/blog-revenge
+## web/blog-revenge
 
 * unsolved
-* solves: (forgot to jot down the number)
 
 This is exact same challenge but the flag is not leaked through the dockerfile. I couldn't find out how to solve this CTF and couldn't find the author or any other writeup about it. There are a lot places in the code with some questionable code but nothing seems to work. I do see people performing sql injection but nothing came from it.
 

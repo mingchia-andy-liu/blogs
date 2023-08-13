@@ -1,0 +1,24 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+
+title = "Andy Liu"
+
+[params]
+  isoCode = "en"
+  displayName = "EN"
+  rtl = false
+  dateFormat = "2006-01-02"
+  description = "I love sharing what I've learned with others and I hope you find something here that's useful."
+
+[author]
+  name = "Andy Liu"
+  image = "images/head.jpg"
+  headline = "I love sharing what I've learned with others and I hope you find something here that's useful."
+  bio = "I love sharing what I've learned with others and I hope you find something here that's useful."
+  links = [
+    { email = "mailto:hello@aliu.dev" },
+    { github = "https://aliu.info/gh" },
+    { linkedin = "https://aliu.info/in" },
+    { twitter = "https://aliu.info/tw" }
+  ]

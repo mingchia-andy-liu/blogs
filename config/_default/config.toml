@@ -1,0 +1,26 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/getting-started/
+
+baseURL = "https://aliu.dev"
+defaultContentLanguage = "en"
+
+# needed if we didn't install congo by hugo mod
+theme = "congo"
+
+
+# Hugo global settings.
+relativeURLs    = true
+canonifyURLs    = true
+enableRobotsTXT = true
+enableEmoji     = true
+enableGitInfo   = true
+
+paginate = 20
+summaryLength = 0
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
