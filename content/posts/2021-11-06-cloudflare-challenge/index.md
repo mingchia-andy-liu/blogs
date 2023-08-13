@@ -1,10 +1,10 @@
 ---
 title: "Cloudflare Developer Challenge: Air Quality Report & Prize"
 date: 2021-11-06T11:45:42-07:00
-image: images/weather-2.jpeg
 slug: cloudflare-dev-challenge
 tags:
   - cloudflare
+showCover: false
 ---
 
 ## Introduction
@@ -28,7 +28,7 @@ With the goal in mind, I needed a data source that is free and easy to use. I fo
 Here is my first iteration, an extremely simple air quality report. (I censored the city and country). The air quality is color coded according to the [national standard](https://webcam.srs.fs.fed.us/test/AQI.shtml). I was very happy to see what I have done.
 
 {{< figure
-    src="/images/weather-1.png"
+    src="weather-1.png"
     alt="Air quality first iteration"
 >}}
 
@@ -87,7 +87,7 @@ After the submission, I totally forgot about it. I received an email titled "`[C
 The prize came after another 10 days.
 
 {{< figure
-    src="/images/weather-2.jpeg"
+    src="cover.jpeg"
     alt="Cloudflare prize in a box."
 >}}
 

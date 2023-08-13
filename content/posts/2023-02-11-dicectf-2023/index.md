@@ -2,10 +2,10 @@
 title: "DiceCTF 2023 Writeup"
 date: 2023-02-11T09:47:42-08:00
 description: My DiceCTF challenge experiences. What I learned and what cool things I found out.
-image: images/2023-02-11/solved-screenshot.png
 tags:
   - ctf
 showTableOfContents: true
+showCover: false
 ---
 
 DiceGang 🎲 just finished hosting DiceCTF 2023 (https://ctf.dicega.ng). It was first my first ever CTF event. I didn't really have any expectations going in and signed up on a whim. But guess what? I managed to solve one of the challenges and even gave a couple others a shot. I learned a ton from this event, and I'm definitely going to attend more CTF events in the future.

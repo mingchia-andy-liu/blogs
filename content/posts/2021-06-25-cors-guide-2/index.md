@@ -2,10 +2,10 @@
 title: "CORS Guide Part 2"
 date: 2021-06-25T19:45:15-07:00
 description: Learn how to fix CORS with examples.
-image: images/cors-error.png
 slug: cors-guide-2
 tags:
-  - webdev
+  - web
+  - security
 ---
 
 # Introduction
