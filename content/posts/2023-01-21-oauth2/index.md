@@ -2,10 +2,10 @@
 title: "Basic of OAuth 2.0"
 date: 2023-01-21T00:00:00
 description: What is OAuth and how does it work?
-image: images/2023-01-21/og.png
 tags:
   - OAuth
 showTableOfContents: true
+showCover: false
 ---
 
 Recently, I completed Aaron Parecki's course on OAuth to learn how they work. I was fascinated by it. I started making notes to make sure I understand it better. I even gave a talk in my team at my work. It felt really good to learn how these protocol/framework work behind the scene. Here are my notes on OAuth.

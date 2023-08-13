@@ -2,11 +2,10 @@
 title: "TFCCTF 2023 Writeup"
 date: 2023-07-30T09:16:29-07:00
 description: The TFCCTF 2023 writeup. 2 web, 1 crypto, 1 misc
-images:
-  - images/2023-07-30/TFCCTF-2023.png
 tags:
   - ctf
 showTableOfContents: true
+showCover: false
 ---
 
 [The Few Chosen](https://ctf.thefewchosen.com/) hosted their third annual Capture The Flag (CTF) event. A lot of teams participated. It was very interesting and had a lot of solving them. To me, this was a great educational CTF and beginner friendly.

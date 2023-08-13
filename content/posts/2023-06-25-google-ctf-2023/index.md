@@ -2,10 +2,10 @@
 title: "Google CTF 2023 Writeup"
 date: 2023-06-26T00:00:00
 description: The Google CTF 2023 challenge writeup. 1 solved web challenge.
-image: images/2023-06-25/Google-CTF-2023.png
 tags:
   - ctf
 showTableOfContents: true
+showCover: false
 ---
 
 A CTF organized by [Google](https://g.co/ctf). I only solved 1 web challenge but learnt a lot of things for other categories.

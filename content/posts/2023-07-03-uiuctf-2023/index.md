@@ -2,10 +2,10 @@
 title: "UIUCTF 2023 Writeup"
 date: 2023-07-03T17:56:34-07:00
 description: The UIUCTF 2023 Writeup. One crypto challenge. 
-image: images/2023-07-03/UIUCTF-2023.png
 tags:
   - ctf
 showTableOfContents: true
+showCover: false
 ---
 
 UIUCTF was organized by [SIGPwny](https://2023.uiuc.tf/). The UI of the challenge was really cool. An old Windows look but it's based on the standard CTF template. It was impressive to see their work to make the UI memorable.
