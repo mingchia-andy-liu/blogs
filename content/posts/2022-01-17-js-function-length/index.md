@@ -5,6 +5,7 @@ description: Found a a function.length in wild. What is it?
 slug: javascript-function-length
 tags:
   - javascript
+showCover: false
 ---
 
 Recently I found a `function.length` in the real world pacakge. I did not know what it was. To my surprise, it is a legal property given a function. It gives the number of parameters expected by the function. 
